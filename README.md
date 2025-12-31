@@ -214,23 +214,11 @@ expectations:
     ├── Spark_Rule.py
     ├── config
     │   └── rules
-    │       ├── __pycache__
-    │       │   └── config_load.cpython-312.pyc
     │       ├── config_load.py
     │       └── user_profile.yaml
     ├── data_docs
     ├── dynamic_ge_generator
     │   ├── __init__.py
-    │   ├── __pycache__
-    │   │   ├── __init__.cpython-310.pyc
-    │   │   ├── __init__.cpython-312.pyc
-    │   │   ├── __init__.cpython-38.pyc
-    │   │   ├── generator.cpython-310.pyc
-    │   │   ├── generator.cpython-312.pyc
-    │   │   ├── generator.cpython-38.pyc
-    │   │   ├── metadata_parser.cpython-310.pyc
-    │   │   ├── metadata_parser.cpython-312.pyc
-    │   │   └── metadata_parser.cpython-38.pyc
     │   ├── generator.py
     │   └── metadata_parser.py
     └── ge_data_docs
