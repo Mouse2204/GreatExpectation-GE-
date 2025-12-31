@@ -1,0 +1,10 @@
+pyspark==3.5.1
+kafka-python
+pyyaml
+pandas
+s3fs
+pyarrow
+fastparquet
+duckdb
+boto3
+great_expectations

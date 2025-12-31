@@ -1,0 +1,33 @@
+meta:
+  table_name: "user_profile"
+
+expectations:
+  - type: expect_column_values_to_not_be_null
+    column: id
+
+  - type: expect_column_values_to_be_between
+    column: age
+    kwargs: {min_value: 0, max_value: 120}
+
+  - type: expect_column_values_to_be_in_set
+    column: role
+    kwargs: {value_set: ["Admin", "User", "Dev", "Manager", "Analyst"]}
+
+  - type: expect_column_values_to_be_between
+    column: salary
+    kwargs: {min_value: 0, max_value: 1000000}
+
+  - type: expect_column_values_to_match_regex
+    column: email
+    kwargs: {regex: "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$"}
+
+  - type: expect_table_column_count_to_equal
+    kwargs: {value: 9}
+
+  - type: expect_column_mean_to_be_between
+    column: salary
+    kwargs: {min_value: 1000, max_value: 10000}
+
+  - type: expect_column_distinct_values_to_contain_set
+    column: role
+    kwargs: {value_set: ["User", "Admin"]}
