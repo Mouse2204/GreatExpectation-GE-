@@ -209,9 +209,10 @@ Rule-Engine/
 │       └── user_profile.yaml  # File chứa luật kiểm tra
 ├── spark_apps/
 │   └── Spark_Rule.py          # Code chính (Spark Streaming)
+├── tests/
+│   └── procedure.py
+|       check.py 
 ├── bucker_minIO.py            # Script tạo bucket
-├── procedure.py               # Script sinh dữ liệu (Producer)
-├── GX.py                      # Script xem file Parquet
 ├── docker-compose.yaml        # Cấu hình Docker
 └── requirements.txt           # Thư viện cần thiết
 
